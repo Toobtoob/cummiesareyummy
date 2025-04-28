@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cummies Are Yummy Official Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      background-color: #fff0f5;
+    }
+    header {
+      background-color: pink;
+      padding: 20px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    img {
+      margin-top: 20px;
+      max-width: 80%;
+      height: auto;
+      border-radius: 10px;
+    }
+    .items {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 30px 0;
+      gap: 20px;
+    }
+    .item {
+      background: white;
+      border: 2px solid pink;
+      padding: 20px;
+      width: 220px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .item:hover {
+      transform: scale(1.05);
+    }
+    .item-details {
+      display: none;
+      margin-top: 10px;
+    }
+    button {
+      background-color: pink;
+      border: none;
+      padding: 10px 20px;
+      margin-top: 10px;
+      cursor: pointer;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    footer {
+      background-color: #ffe4e1;
+      padding: 20px;
+      margin-top: 30px;
+    }
+    footer ul {
+      list-style-type: disc;
+      text-align: left;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Cummies Are Yummy Official Website</h1>
+</header>
+
+<!-- Your picture -->
+<img src="YOUR_IMAGE_URL_HERE" alt="Cummies Image">
+
+<!-- Items Section -->
+<div class="items">
+  <div class="item" onclick="toggleDetails(0)">
+    <h2>Pack of 30 Cummy Bears</h2>
+    <div class="item-details">
+      <p>Price: $9.99</p>
+      <p>Description: A pack full of delicious, classic cummy bears to enjoy anytime.</p>
+      <button>Buy Now</button>
+    </div>
+  </div>
+
+  <div class="item" onclick="toggleDetails(1)">
+    <h2>Pack of 30 Sour Cummies</h2>
+    <div class="item-details">
+      <p>Price: $10.99</p>
+      <p>Description: Tangy and sweet sour cummies for a flavorful punch.</p>
+      <button>Buy Now</button>
+    </div>
+  </div>
+
+  <div class="item" onclick="toggleDetails(2)">
+    <h2>Pack of 30 Cummy Worms</h2>
+    <div class="item-details">
+      <p>Price: $11.99</p>
+      <p>Description: Stretchy, chewy cummy worms — a perfect twist of fun and taste.</p>
+      <button>Buy Now</button>
+    </div>
+  </div>
+
+  <div class="item" onclick="toggleDetails(3)">
+    <h2>One Large Cummy Bear</h2>
+    <div class="item-details">
+      <p>Price: $24.99</p>
+      <p>Description: A giant-sized cummy bear for the ultimate indulgence.</p>
+      <button>Buy Now</button>
+    </div>
+  </div>
+</div>
+
+<!-- Why We Sell Cummies -->
+<footer>
+  <h3>Why We Sell Cummies:</h3>
+  <ul>
+    <li>They taste amazing</li>
+    <li>Made with love and care</li>
+    <li>We believe everyone deserves a treat</li>
+    <li>Supporting small, local producers</li>
+  </ul>
+</footer>
+
+<script>
+function toggleDetails(index) {
+  const details = document.querySelectorAll('.item-details');
+  details[index].style.display = (details[index].style.display === 'block') ? 'none' : 'block';
+}
+</script>
+
+</body>
+</html>
